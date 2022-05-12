@@ -20,4 +20,9 @@ class Post extends Model
     }
 
     //protected $fillable = ['title', 'excerpt', 'body', 'slug', 'category_id'];
+
+    public function user()
+    {
+      return $this->belongsTo(User::class);
+    }
 }
